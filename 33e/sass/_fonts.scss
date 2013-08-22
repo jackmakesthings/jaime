@@ -1,0 +1,92 @@
+
+
+/* fonts used:
+font-family:'DIN1451W01-Mittelschrif';
+font-family:'DIN Next W01 Italic';
+font-family:'DIN Next W01 Light';
+font-family:'DINNextW01-LightItalic';
+font-family:'DIN Next W01 Medium';
+font-family:'DIN Next W01 Regular';
+font-family:'DINNextLTW01-UltraLight 706122';
+*/
+
+/* @license
+ * MyFonts Webfont Build ID 2439046, 2012-12-29T19:54:14-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Marydale Regular by Three Islands Press
+ * URL: http://www.myfonts.com/fonts/3ip/marydale/regular/
+ * Copyright: &#x00A9;1993, 2002, 2006 by Brian Willson, d.b.a. Three Islands Press (3IP), Rockland ME USA (www.3ip.com). All rights reserved worldwide. Marydale is a trademark of Brian Willson/3IP.
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2439046
+ *
+ * © 2012 Bitstream Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+
+@font-face {
+    font-family: 'ps-regular';
+    src: url('../fonts/plutosansregular-webfont.eot');
+    src: url('../fonts/plutosansregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/plutosansregular-webfont.woff') format('woff'),
+         url('../fonts/plutosansregular-webfont.ttf') format('truetype'),
+         url('../fonts/plutosansregular-webfont.svg#pluto_sans_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ps-regular_italic';
+    src: url('../fonts/plutosansregular-italic-webfont.eot');
+    src: url('../fonts/plutosansregular-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/plutosansregular-italic-webfont.woff') format('woff'),
+         url('../fonts/plutosansregular-italic-webfont.ttf') format('truetype'),
+         url('../fonts/plutosansregular-italic-webfont.svg#pluto_sansregular_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ps-light';
+    src: url('../fonts/plutosanslight-webfont.eot');
+    src: url('../fonts/plutosanslight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/plutosanslight-webfont.woff') format('woff'),
+         url('../fonts/plutosanslight-webfont.ttf') format('truetype'),
+         url('../fonts/plutosanslight-webfont.svg#pluto_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ps-light_italic';
+    src: url('../fonts/plutosanslight-italic-webfont.eot');
+    src: url('../fonts/plutosanslight-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/plutosanslight-italic-webfont.woff') format('woff'),
+         url('../fonts/plutosanslight-italic-webfont.ttf') format('truetype'),
+         url('../fonts/plutosanslight-italic-webfont.svg#pluto_sanslight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ps-medium';
+    src: url('../fonts/plutosansmedium-webfont.eot');
+    src: url('../fonts/plutosansmedium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/plutosansmedium-webfont.woff') format('woff'),
+         url('../fonts/plutosansmedium-webfont.ttf') format('truetype'),
+         url('../fonts/plutosansmedium-webfont.svg#pluto_sansmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

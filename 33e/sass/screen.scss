@@ -1,12 +1,15 @@
 // ---------------------------------------------------------------------------
 // Imports
+@import "compass",
+				"normalize",
+				"fonts";
 
-@import "base";
 
-/* -------------------------------------------------------------------------*/
-/* Layout */
+@import "variables",
+				"helpers",
+				"defaults",
+				"grid";
 
-.container {
-  @include container;
-  @include susy-grid-background;
-}
+@import "layout";
+
+@import "temp";

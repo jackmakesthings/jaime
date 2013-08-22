@@ -1,0 +1,16 @@
+- var links = ["residences","buildings","neighborhood","home","the attenbury mansion","team","contact"]
+- var image = 'http://fakeimg.pl/1006x450/0ce/fff/?text=img'
+
+extends layout
+
+block content
+  div.showcase(data-img="#{image}", style="background-image:url(#{image})")
+  div.page
+     //- img(src="#{image}", class="hero-img")
+    main.page-content(role="main")
+      section
+      | Hello world!
+
+
+
+

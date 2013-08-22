@@ -1,0 +1,53 @@
+// layout.scss - for positioning and arranging elements.
+
+%wrap {
+	@include container;
+	margin:auto;
+	$debug:false; @if($debug==true) { border:1px solid #fff; }
+}
+
+header, main, .site-info {
+	@extend %wrap;
+	}
+
+
+// Header
+.site-header {
+	position:fixed;
+	top:0;
+	width:auto;
+	max-width:100%;
+	left:0; right:0;
+	background:$blue;
+		nav {
+			.menu {
+				width:$wrap-width;
+				margin:auto;
+				}
+			}
+	}
+
+.showcase {
+	top:40px; bottom:0;
+	left:0; right:0; width:100%;
+	// height:0;
+	// bottom:10%;
+	// height:100%;
+	position:fixed;
+	background-position:center top;
+	background-size:100%;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	z-index:-1;
+	// overflow:visible;
+	& + .page {
+		position:absolute;
+		z-index:200;
+		// top:90%;
+		// margin-top:90%;
+		min-height:100%;
+		// background:$blue;
+		width:100%;
+		display:block;
+	}
+}

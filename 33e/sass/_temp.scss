@@ -1,0 +1,10 @@
+// temp.scss - for prototyping and quickfixes only
+
+main {
+	padding:1em 3em;
+	// background: transparentize(white,0.7);
+	min-height:400px;
+}
+
+.primary-nav .menu { @include row-list($type:"table"); }
+.menu > li > a { width:calc(60em/8); }

@@ -1,0 +1,43 @@
+body {
+	background-color:$blue;
+	@include background-image(linear-gradient($blue 60%, $darkblue 90%, $darkblue));
+	color:white;
+	font-family:$sans-l;
+}
+
+// link defaults
+a {
+	color:white;
+	text-decoration:none;
+	&:hover, &:active { color: skyblue; }
+}
+
+// image defaults
+img { max-width:100%; }
+
+// lists - navigation style
+
+@mixin row-list($type:"table") {
+	width: auto;
+	float: none;
+	list-style: none;
+	@if($type == "table") { display: table; }
+	@if($type == "floats" or $type == "iblocks") { display:block; }
+		> li {
+			margin: 0;
+			padding: 0;
+			@if($type == "table") { display: table-cell; }
+			@if($type == "floats") { display:block; float:left; }
+			@if($type == "iblocks") { display:inline-block; float:none; }
+			> a {
+				display: block;
+				text-align: center;
+			}
+	}
+}
+
+.menu {
+	@extend %twelve;
+	margin:auto;
+	@include row-list($type:"table");
+}

@@ -1,0 +1,15 @@
+- var links = ["residences","buildings","neighborhood","home","the attenbury mansion","team","contact"]
+!!!
+html
+  head
+    title 33e 74th Street
+    meta(charset="utf-8")
+    link(rel="stylesheet", id="screen-css", href="../css/screen.css")
+  body
+    div.wrap
+      header.site-header(role="banner", data-js="sticky")
+        nav.primary-nav(role="navigation")
+          ul.menu
+            - each link in links
+              li
+                a(href="#{link}",rel="", class="nav-#{link}") #{link}

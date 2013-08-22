@@ -1,0 +1,18 @@
+// mixins, functions, etc.
+
+
+// stretching past the grid
+@mixin fullwidth {
+	position:fixed;
+	left:0; right:0; top:0;
+	width:100%; height:auto;
+	$dev:true;
+	@if($dev==true) { height:300px; }
+}
+
+
+.hero-img {
+	@include fullwidth;
+	// visibility:hidden;
+}
+

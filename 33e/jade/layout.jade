@@ -1,0 +1,23 @@
+- var links = ["residences","buildings","neighborhood","home","the attenbury mansion","team","contact"]
+- var image = 'http://fakeimg.pl/1000x450/0ce/fff/?text=img'
+- var content = "hello world"
+
+!!!
+html
+  head
+    title 33e 74th Street
+    meta(charset="utf-8")
+    link(rel="stylesheet", id="screen-css", href="../css/screen.css")
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js").
+  body
+    header.site-header(role="banner", data-js="sticky")
+      nav.primary-nav(role="navigation")
+        ul.menu
+          - each link in links
+            li: a(href="#{link}",rel="", class="nav-#{link}") #{link}
+    block content
+    include _footer
+
+
+
+

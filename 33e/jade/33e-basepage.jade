@@ -1,26 +1,28 @@
-- var links = ["Residences","Buildings","Neighborhood","Home","The Attenbury Mansion","Team","Contact"]
-- var image = 'http://fakeimg.pl/1000/450'
+- var links = ["residences","buildings","neighborhood","home","the attenbury mansion","team","contact"]
+- var image = 'http://fakeimg.pl/1000x450/0ce/fff/?text=img'
 - var content = "hello world"
 
 !!!
 html
   head
-    title 33e
-    link(rel="stylesheet", href="stylesheets/app.css")
+    title 33e 74th Street
+    meta(charset="utf-8")
+    link(rel="stylesheet", id="app-css", href="stylesheets/app.css")
   body
-    header.site-header(data-js="sticky")
-      nav.primary-nav
-        ul.menu
-          - each link in links
-            li.nav-item
-              a.nav(href="#{link}",rel="", class="#{link}") #{link}
-    article.page
-      aside.showcase
-        img(src="#{image}", class="hero-img")
-      main.page-content(role="main") 
-        | #{content}
-      aside.site-footer
-        address.footer-info
+    div.wrap
+      header.site-header(role="banner", data-js="sticky")
+        nav.primary-nav(role="navigation")
+          ul.menu
+            - each link in links
+              li
+                a(href="#{link}",rel="", class="nav-#{link}") #{link}
+      article.page
+        aside.showcase
+          img(src="#{image}", class="hero-img")
+        main.page-content(role="main")
+          | #{content}
+      footer.site-info(role="contentinfo")
+        address.contact-info
           | 33 East 74th Street, New York NY 1xxxx
           a(href="tel:5555555555") (555) 555-5555
           a(href="mailto:info@33east74.com") info@33east74.com
