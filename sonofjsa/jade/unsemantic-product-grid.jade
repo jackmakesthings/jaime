@@ -1,0 +1,53 @@
+!!! 5
+html
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Untitled
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='author', href='humans.txt')
+  body
+    header.site-header
+      .masthead
+        a.logo.root-link(href='')
+          h1.logo(title='Title') Title
+      nav.main-nav
+        ul
+          - var links = [1,2,3,4,5,6,7]
+          - for link, i in links
+            li.menu-cat
+              a.top-link(href='') Link #{i}
+    
+    
+    main.product-grid-list
+
+       ul.product-grid
+        items = ['a','b','c','d','e','f','g','h']
+        for item, i in items
+          li.product-thumb.item
+            a.thumb-link(href='')
+              img(src='fakeimg.pl/232/232', alt='img', class='product-thumb')
+              div.thumb-overlay
+                h3.overlay-title.js-reveal Hello World
+
+      footer.grid-footer
+        nav.pagination.post-paging
+          a(href='',class='show-all-pages button js-unpaginate')
+            for j = 0; j < 6; j++
+            a.paged(href='', data-page="#{j}") ${j}
+          a(href='', class='next-page button rarr') Next  
+
+    aside.site-footer
+      nav.secondary
+        for k = 0; k < 3; k++
+        ul.sub-secondary
+          li
+            a(href='', class='secondary-link footer-link')
+          li
+            a(href='', class='secondary-link footer-link')   
+        footer.credits
+          address.copyright &copy; Owner, year
+          address.siteinfo Site by jack
+
+    script(src='js/main.js')
